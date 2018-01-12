@@ -11,10 +11,13 @@
 -> state json to modbus
 -> logger
 -> config json for coils....
+-> send data to own server to db (neue fahrten anlegen)
 
 
-
-
+## QUESTIONS
+-> nach den modbus daten fragen
+-> welches os ->fertiges image
+->
 
 
 # FACTS
