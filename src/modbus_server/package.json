@@ -1,0 +1,34 @@
+{
+  "name": "json2modbus",
+  "version": "1.0.0",
+  "description": "A simple json to modbus server",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RBEGamer/train_sim_emma_jim.git"
+  },
+  "keywords": [
+    "modbus",
+    "json",
+    "mqtt"
+  ],
+  "author": "Marcel Ochsendorf",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/RBEGamer/train_sim_emma_jim/issues"
+  },
+  "homepage": "https://github.com/RBEGamer/train_sim_emma_jim#readme",
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "cookie-parser": "^1.4.3",
+    "express": "^4.16.2",
+    "modbus-tcp": "^0.4.12",
+    "mqtt": "^2.15.1",
+    "multer": "^1.3.0",
+    "net": "^1.0.2",
+    "nodemon": "^1.14.11"
+  }
+}
