@@ -1,0 +1,4 @@
+sceneSetups:
+- path: Assets/Train_Assets/150129.unity
+  isLoaded: 1
+  isActive: 1
