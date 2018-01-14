@@ -1,0 +1,38 @@
+{
+"modbus_conf":{
+    "matrix":[
+        {
+            "type":"coil",
+            "address":0,
+            "desc": "a simple 1 bit input",
+            "sensor_uuid":""
+        },{
+            "type":"discrete_input",
+            "address":2,
+            "desc": "a simple input input",
+            "sensor_uuid":""
+        },{
+            "type":"input_register",
+            "address":3,
+            "desc": "a simple input register",
+            "sensor_uuid":""
+        },{
+            "type":"holding_register",
+            "address":4,
+            "desc": "a simple input register",
+            "sensor_uuid":""
+        }
+    ]
+},
+"mqtt_conf":{
+    "server_uri":"mqtt://marcelochsendorf.com",
+    "sim2mod_topic":"fh2trail_s2m"
+},
+"http_conf":{
+    "bind_port":8080
+}
+
+
+    
+}
+
