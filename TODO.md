@@ -29,3 +29,4 @@ Einzelner Eingang „Discrete Input“	nur Lesen	1-bit
 
 
 
+# RPI ZERO CAN + MODBUS DATA JSON STREAMER GSM
