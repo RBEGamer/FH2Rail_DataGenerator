@@ -1,6 +1,6 @@
 //ENTRY
 //TODO mqtt client, modbus client setup, congiffile with registers
-var config = require('./config.json');
+var  config = require('./config.json');
 
 
 
@@ -9,13 +9,18 @@ var client  = mqtt.connect(config.mqtt_conf.server_uri)
  
 client.on('connect', function () {
   client.subscribe('fh2trail')
-  client.publish('fh2trail', 'Hello mqtt')
+ // client.publish('fh2trail', 'Hello mqtt')
 })
  
 client.on('message', function (topic, message) {
   // message is Buffer
   console.log(message.toString())
   client.end()
+
+
+
+  //update states in global register with the uuids
+  //send changes values to modbus
 })
 
 
@@ -23,10 +28,13 @@ client.on('message', function (topic, message) {
 var express = require('express');
 var app = express();
 
-app.get('/', function (req, res) {
-   res.send('Hello World');
-})
+app.set('view engine', 'ejs');
+app.use('/public', express.static(__dirname + '/public'));
 
+
+app.get('/', function(req, res) {
+    res.render('pages/index');
+});
 
 app.post('/', function (req, res) {
     console.log("Got a POST request for the homepage");
