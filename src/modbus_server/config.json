@@ -7,9 +7,26 @@
         
         {
             "sensor_id": "1",
-            "sensor_desc": "spped motor 1 -- DESC FOR WEBUI",
+            "sensor_desc": "test data",
             "type": "register",
             "address": 4
+        },
+        {
+            "sensor_id": "2",
+            "sensor_desc": "RMP MOTOR 1",
+            "type": "register",
+            "address": 5
+        },
+        {
+            "sensor_id": "3",
+            "sensor_desc": "RMP MOTOR 2",
+            "type": "register",
+            "address": 6
+        },{
+            "sensor_id": "4",
+            "sensor_desc": "TEMP BRENNSTOFFZELLE",
+            "type": "register",
+            "address": 6
         }
     ]
 },
