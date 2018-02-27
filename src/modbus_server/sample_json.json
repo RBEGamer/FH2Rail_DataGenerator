@@ -1,35 +1,28 @@
 {
-"train_id":"0",
-"train_name":"demo_train",
-"timestamp":"00987654567",
-"session_id":"-1",
-"sensors":[
-
-    {
-        "type":"motor",
-        "location":"motor_back",
-        "identifier":"1",
-        "unit":"rpm",
-        "widget":"gauge",
-        "value":95
+    "modbus_conf":{
+        "port": 502,
+        "server":"127.0.0.1",
+        "device_id": 3,
+        "matrix":[
+            
+            {
+                "sensor_id": "1",
+                "sensor_desc": "spped motor 1 -- DESC FOR WEBUI",
+                "type": "register",
+                "address": 4
+            }
+        ]
     },
-    {
-        "type":"motor",
-        "location":"motor_front",
-        "identifier":"2",
-        "unit":"rpm",
-        "widget":"gauge",
-        "value":95
-    },{
-        "type":"temperature",
-        "location":"motor_front",
-        "identifier":"3",
-        "unit":"c",
-        "widget":"graph",
-        "value":18
+    "mqtt_conf":{
+        "server_uri":"mqtt://marcelochsendorf.com",
+        "sim2mod_topic":"fh2trail_s2m"
+    },
+    "http_conf":{
+        "bind_port":8080
     }
-
-]
-
-
-}
+    
+    
+        
+    }
+    
+    

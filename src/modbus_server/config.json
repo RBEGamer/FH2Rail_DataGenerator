@@ -1,26 +1,15 @@
 {
 "modbus_conf":{
+    "port": 1503,
+    "server":"127.0.0.1",
+    "device_id": 3,
     "matrix":[
+        
         {
-            "type":"coil",
-            "address":0,
-            "desc": "a simple 1 bit input",
-            "sensor_uuid":""
-        },{
-            "type":"discrete_input",
-            "address":2,
-            "desc": "a simple input input",
-            "sensor_uuid":""
-        },{
-            "type":"input_register",
-            "address":3,
-            "desc": "a simple input register",
-            "sensor_uuid":""
-        },{
-            "type":"holding_register",
-            "address":4,
-            "desc": "a simple input register",
-            "sensor_uuid":""
+            "sensor_id": "1",
+            "sensor_desc": "spped motor 1 -- DESC FOR WEBUI",
+            "type": "register",
+            "address": 4
         }
     ]
 },

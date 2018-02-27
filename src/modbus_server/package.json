@@ -23,9 +23,12 @@
   "homepage": "https://github.com/RBEGamer/train_sim_emma_jim#readme",
   "dependencies": {
     "body-parser": "^1.18.2",
+    "chalk": "^2.3.1",
     "cookie-parser": "^1.4.3",
     "ejs": "^2.5.7",
     "express": "^4.16.2",
+    "modbus-serial": "^7.1.5",
+    "modbus-stream": "^0.39.0",
     "modbus-tcp": "^0.4.12",
     "mqtt": "^2.15.1",
     "multer": "^1.3.0",
